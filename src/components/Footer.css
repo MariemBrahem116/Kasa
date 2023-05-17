@@ -1,0 +1,9 @@
+.footer{
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    min-height: 100px;
+    display: grid;
+    place-items: center;
+}

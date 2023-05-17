@@ -1,0 +1,20 @@
+.appartement{
+    background: linear-gradient(180deg,#FF6262, #823232);
+    flex-basis: 30%;
+    border-radius: 10px;
+    display:grid ;
+    align-items:end;
+    min-width: 200px;
+    min-height: 200px;
+}
+@media screen and (max-width: 700px){
+    .appartement{
+        flex-basis: 100%;
+    }
+}
+.appartement_titre{
+    width:30%;
+    margin:1rem;
+    color:white;
+
+}

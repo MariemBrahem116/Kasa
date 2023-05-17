@@ -1,0 +1,17 @@
+.appartement-grid{
+    background: #F7F7F7;
+    border-radius: 25px;
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-between;
+    gap:1rem;
+}
+@media screen and (max-width: 700px) {
+    .appartement-grid{
+        justify-content: center;
+        background-color: white;
+        padding: 0;
+    }
+}

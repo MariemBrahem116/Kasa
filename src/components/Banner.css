@@ -1,0 +1,19 @@
+.banner{
+    max-width: 100%;
+    background-image: url("/public/banner.png");
+    min-height: 140px;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    border-radius: 25px;
+    color:white;
+    background-position: center;
+    margin-bottom: 2rem;
+}
+.banner::before{
+    position: absolute;
+    content:"";
+    inset:0;
+    opacity: 0.3;
+
+}
