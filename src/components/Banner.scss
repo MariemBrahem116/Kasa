@@ -1,6 +1,6 @@
 .banner{
     max-width: 100%;
-    background-image: url("/public/banner.png");
+    background-image: url('./banner.png');
     min-height: 140px;
     margin: auto;
     display: grid;
@@ -9,11 +9,11 @@
     color:white;
     background-position: center;
     margin-bottom: 2rem;
-}
-.banner::before{
-    position: absolute;
-    content:"";
-    inset:0;
-    opacity: 0.3;
+    &::before{
+        position: absolute;
+        content:"";
+        inset:0;
+        opacity: 0.3;
 
+    }
 }

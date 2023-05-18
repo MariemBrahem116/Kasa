@@ -1,6 +1,6 @@
 import React from 'react'
-import "./AppartementList.css"
-import Appartement from '../components/Appartement'
+import "./AppartementList.scss"
+import Appartement from './Appartement.jsx'
 
 function AppartementList() {
   return (

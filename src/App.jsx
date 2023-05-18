@@ -4,7 +4,7 @@ import Banner from './components/Banner'
 import AppartementList from './components/AppartementList'
 import Footer from './components/Footer'
 import Main from './components/Main'
-import "./App.css"
+import "./App.scss"
 
 function App() {
   return (

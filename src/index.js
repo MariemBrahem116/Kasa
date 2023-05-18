@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
 import App from './App';
+import Navbar from './components/Navbar';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -9,7 +9,8 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <App />,
+    errorElement: <h1>404 not found</h1>
   },
   {
     path: "/flat",
@@ -17,17 +18,16 @@ const router = createBrowserRouter([
   },
   {
     path: "/about",
-    element: <h1>A propos</h1>
-  },
-  {
-    path: "/404",
-    element: <h1>404</h1>
+    element: <Navbar />
   }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <RouterProvider router={router} />
+  <React.StrictMode>
+       <RouterProvider router={router} />
+  </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

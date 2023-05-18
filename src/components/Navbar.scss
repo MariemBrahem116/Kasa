@@ -1,0 +1,25 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#FF6060;
+    padding:2rem;
+    font-weight: 500;
+    gap:3rem;
+    & >*:first-child{
+        margin-right: auto;
+    }
+    & a{
+        text-decoration: none;
+        color:#FF6060;
+        &:hover,
+        &.active{
+            text-decoration:underline;
+        }
+
+    }
+}
+
+
+
+
