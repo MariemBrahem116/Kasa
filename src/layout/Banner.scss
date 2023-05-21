@@ -1,3 +1,5 @@
+@use "../scss/colors.scss" as *;
+
 .banner{
     max-width: 100%;
     background-image: url('./banner.png');
@@ -6,7 +8,7 @@
     display: grid;
     place-items: center;
     border-radius: 25px;
-    color:white;
+    color:$light-color;
     background-position: center;
     margin-bottom: 2rem;
     &::before{
