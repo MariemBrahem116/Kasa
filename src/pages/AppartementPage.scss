@@ -2,55 +2,25 @@
 
 .appartementPage{
     color:$color-red;
-    img{
-        width:100%;
-        border-radius: 32px;
+    .AppartementDescriptionScroll{
+        display: flex;
+        gap:2rem;
+        overflow: hidden;
+        @media screen and (width <= 768px){
+            flex-direction: column;
+        }
+        * > {
+            flex-grow: 1;
+        }
     }
+
     h1{
         font-weight:500;
-        font-size: 36px;
+        margin-block: 0;
     }
     h2{
         font-weight: 500;
-        font-size: 1rem;
-    }
-    & .appartementPage_subtitle{
-        display: flex;
-        gap: 1rem;
-        span{
-            background-color: $color-red;
-            border-radius: 10px;
-            color:$light-color;
-            padding: 0.2em;
-            width: 115px;
-            text-align: center;
-            align-items: center;
-        }
-
-    }
-    .appartement_title{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .appartement_name{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .appartement_owner_badge{
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
-            background-color:$dark-grey;
-        }
-        h3{
-            position: absolute;
-            right: 8rem;
-            width: 97px;
-            font-size: 18px;
-            text-align: end;
-            font-weight: 500;
-        }
+        margin-top:1rem;
+        font-size: 20px;
     }
 }

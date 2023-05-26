@@ -3,12 +3,23 @@
 .appartement-grid{
     background: $grey-color;
     border-radius: 25px;
-    min-height: 50vh;
     display: flex;
     flex-wrap: wrap;
-    padding: 1rem;
-    justify-content: space-between;
-    gap:1rem;
+    gap: 50px 60px;
+    justify-content: center;
+    margin-top: 43px;
+    padding: 50px;
+    a{
+        text-decoration: none;
+        flex: 1 1 auto;
+        max-height: 340px;
+        max-width: 340px;
+        min-width: 241px;
+    }
+    & > * {
+        width: 100%;
+        max-width: 20rem;
+    }
     @media screen and (max-width: 700px) {
         .appartement-grid{
             justify-content: center;

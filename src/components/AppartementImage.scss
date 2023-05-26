@@ -1,0 +1,45 @@
+@use "../scss/colors.scss" as *;
+
+.appartement-image{border-radius: 25px;
+    height: 415px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+    .slideCounter{
+        position: absolute;
+        bottom: 1rem;
+        width: 100%;
+        text-align: center;
+        color: $light-color;
+        font-size: 18px;
+    }
+    .btn{
+        position: absolute;
+        top:0;
+        bottom: 0;
+        width: 5rem;
+        background-color: transparent;
+        color:$light-color;
+        cursor: pointer;
+        font-size:3rem ;
+        border-width: 0;
+        &.btnPrevious{
+            left:0;
+        }
+        &.btnNext{
+            right:0;
+        }
+    }
+    img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        width: 100%;
+        opacity:0;
+        &.show {
+            opacity: 1;
+        }
+    }
+}

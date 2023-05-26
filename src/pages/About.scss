@@ -1,0 +1,16 @@
+@use "../scss/colors.scss" as *;
+
+.container{
+    .aboutContainer{
+        padding-inline: 5rem;
+    }
+    img{
+        background: $dark-color;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 3rem;
+        mix-blend-mode: darken;
+        border-radius: 25px;
+    }
+}
+

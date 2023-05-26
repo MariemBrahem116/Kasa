@@ -1,0 +1,19 @@
+@use "../scss/colors.scss" as *;
+
+.errorPage{
+    text-align: center;
+    color:$color-red;
+    h1{
+       font-size: 160px;
+       margin-block: 3rem;
+    }
+    h2{
+        font-size: 28px;
+        font-weight: 400;
+        margin-bottom: 8rem;
+    }
+    a{
+        color:$color-red;
+    
+    }
+}
