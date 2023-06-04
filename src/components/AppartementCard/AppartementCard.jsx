@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import "./AppartementList.scss"
-import AppartementCard from './AppartementCard.jsx'
+import "./AppartementCard.scss"
+import Cards from '../Cards/Cards.jsx'
 
-
-
-
-function AppartementList() {
+function AppartementCard() {
 
   const [appartements, setAppartements] = useState([]);
 
@@ -22,11 +19,11 @@ function AppartementList() {
     <div className='appartement-grid'>
       {
         appartements.map((appartement) => (
-          <AppartementCard  title={appartement.title} imageUrl={appartement.cover} id={appartement.id}/>
+          <Cards key= {appartement.id} title={appartement.title} imageUrl={appartement.cover} id={appartement.id}/>
 
       ))}
     </div>
   )
 }
 
-export default AppartementList
+export default AppartementCard

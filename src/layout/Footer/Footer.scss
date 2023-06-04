@@ -1,11 +1,14 @@
-@use "../scss/colors.scss" as *;
+@use "../../Utils/colors.scss" as *;
 
 .footer{
     background-color: $dark-color;
     color: $light-color;
-    padding: 2rem;
+    padding: 2rem 2rem 1rem 2rem ;
     text-align: center;
     min-height: 100px;
     display: grid;
     place-items: center;
+    .footer_text{
+        margin-top: 1.5rem;
+    }
 }

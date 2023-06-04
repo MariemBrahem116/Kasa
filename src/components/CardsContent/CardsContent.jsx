@@ -1,7 +1,7 @@
 import React from 'react'
-import './AppartementHeader.scss'
+import './CardsContent.scss'
 
-function AppartementHeader({flat}) {
+function Cardscontent({flat}) {
     const [fisrtName,lastName] = flat.heberger.nom.split(" ");
   return (
     <div className='appartement_header'>
@@ -10,7 +10,7 @@ function AppartementHeader({flat}) {
                 <h2>{flat.location}</h2>
                 <div className='appartementPage_subtitle'>
                     {flat.tags.map((tag) => (
-                      <span key={tag}>{tag}</span>
+                      <span key={`${tag}`}>{tag}</span>
                     ))}
                 </div>
             </div>
@@ -23,7 +23,7 @@ function AppartementHeader({flat}) {
                 </div>
                 <div className='appartemnt_owner_stars'>
                     {[1,2,3,4,5].map((num) => (
-                      <span  key={num} className={flat.note >= num ? "on" : ""}>★</span>
+                      <span  key={`${num}`} className={flat.note >= num ? "on" : ""}>★</span>
                     ))}
                 </div>
             </div>
@@ -31,4 +31,4 @@ function AppartementHeader({flat}) {
   )
 }
 
-export default AppartementHeader
+export default Cardscontent

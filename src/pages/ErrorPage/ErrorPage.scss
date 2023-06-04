@@ -1,4 +1,4 @@
-@use "../scss/colors.scss" as *;
+@use "../../Utils/colors.scss" as *;
 
 .errorPage{
     text-align: center;
@@ -14,6 +14,6 @@
     }
     a{
         color:$color-red;
-    
+
     }
 }

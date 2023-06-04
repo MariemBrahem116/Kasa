@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import HomePage from './pages/HomePage';
-import Navbar from './components/Navbar';
-import About from './pages/About'
-import Main from './layout/Main';
+import HomePage from './pages/HomePage/HomePage';
+import Navbar from './layout/Header/Navbar';
+import About from './pages/About/About'
+import Main from './layout/Main/Main';
 import {
   createBrowserRouter,
   Outlet,
   RouterProvider,
 } from "react-router-dom";
-import Footer from './layout/Footer';
-import AppartementPage from './pages/AppartementPage';
-import ErrorPage from './pages/ErrorPage'
+import Footer from './layout/Footer/Footer';
+import AppartementPage from './pages/Appartementpage/AppartementPage';
+import ErrorPage from './pages/ErrorPage/ErrorPage'
 
 const HeaderFooterLayout =() =>{
   return (

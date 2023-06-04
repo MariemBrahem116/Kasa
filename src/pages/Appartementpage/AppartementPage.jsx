@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react'
-import "../pages/AppartementPage.scss"
-import AppartementDescription from '../components/AppartementDescription'
-import AppartementImage from '../components/AppartementImage'
-import AppartementHeader from '../components/AppartementHeader'
+import "../Appartementpage/AppartementPage.scss"
+import Collapse from '../../components/Collapse/Collapse'
+import AppartementHeader from '../../components/CardsContent/CardsContent'
 import {useLocation} from "react-router-dom";
+import Carroussel from '../../components/Carroussel/Carroussel'
 
 function AppartementPage() {
   const location = useLocation();
   const [selectedFlat,setSelectedFlat] = useState(null);
-  useEffect(fetchAppartementData,[]);
-  
+  useEffect(fetchAppartementData)
+
   function fetchAppartementData(){
     fetch("db.json")
     .then((Response) => Response.json())
@@ -22,11 +22,11 @@ function AppartementPage() {
   if(selectedFlat == null) return <div>loading...</div>
   return (
     <div className='appartementPage'>
-        <AppartementImage  photos={selectedFlat.photos} />
+        <Carroussel  photos={selectedFlat.photos} />
         <AppartementHeader flat={selectedFlat} />
         <div className='AppartementDescriptionScroll'>
-            <AppartementDescription title="Description" content={selectedFlat.description}/>
-            <AppartementDescription title="Equipements" content={selectedFlat.equipements.map((eq,i) => (<p key={i}>{eq}</p>))}/>
+            <Collapse title="Description" content={selectedFlat.description}/>
+            <Collapse title="Equipements" content={selectedFlat.equipements.map((eq,i) => (<p key={`${eq}-${i}`}>{eq}</p>))}/>
         </div>
     </div>
   )

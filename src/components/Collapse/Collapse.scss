@@ -1,9 +1,13 @@
-@use "../scss/colors.scss" as *;
+@use "../../Utils/colors.scss" as *;
 
 
 .appartement_description{
     flex-basis: 50%;
-    overflow:hidden;
+    overflow: hidden;
+    @media screen and (width <= 410px){
+        max-height: 83px;
+        flex-grow: 1;
+    }
     p{
         margin-block: 0;
     }
@@ -11,10 +15,11 @@
         background-color: $color-red;
         color:$light-color;
         padding: 0.5em 1em;
-        border-radius: 10px;
+        border-radius: 5px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-size: 24px;
         i{
             font-size: 2rem;
             cursor: pointer;
@@ -28,12 +33,16 @@
         top:-0.3rem;
         z-index: -1;
         transition: transform 0.3s ease-in-out;
+        margin-bottom: 0px;
         &.hidden{
             transform : translateY(-100%);
+            flex-grow: 1;
+            display: flex;
+            max-height: 200px;
+            margin-bottom: -40px;
         }
         &.visible{
             transform: translateY(0);
         }
     }
-    margin-bottom: 1rem;
 }

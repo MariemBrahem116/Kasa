@@ -1,0 +1,69 @@
+@use "../../Utils/colors.scss" as *;
+
+.banner{
+    align-items: center;
+    display: flex;
+    height: 223px;
+    justify-content: center;
+    opacity: 1;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+    object-fit: cover;
+    @media screen and (width <= 768px){
+        height: 111px;
+    }
+    img{
+        border-radius: 25px;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        @media screen and (width <= 1300px){
+            object-fit: cover;
+        }
+        @media screen and (width <= 412px){
+            border-radius: 10px;
+        }
+    }
+    .BannerImage{
+        background: $dark-color;
+        border-radius: 25px;
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        mix-blend-mode: darken;
+        opacity: .3;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        @media screen and (width <= 412px){
+            border-radius: 10px;
+        }
+    }
+    h2{
+        color: $light-color;
+        font-size: 48px;
+        line-height: 142.6%;
+        margin: 0 1em;
+        z-index: 1;
+        @media screen and (max-width: 900px){
+            font-size: 32px;
+        }
+        @media screen and (max-width: 768px){
+            font-size: 24px;
+        }
+        @media screen and (width <= 412px){
+            width:63%;
+            margin-left: -50px;
+        }
+        @media screen and (width <= 376px){
+            width:69%;
+        }
+    }
+}

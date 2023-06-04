@@ -1,0 +1,33 @@
+@use "../../Utils/colors.scss" as *;
+
+.appartement{
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    position: relative;
+    @media screen and (width <= 376px){
+        width: 335px;
+        height: 225px;
+    }
+    img{
+        width: 100%;
+        height:100%;
+        object-fit : cover;
+        border-radius: 1rem;
+        filter: brightness(0.8);
+        object-fit: cover;
+        top: 0;
+        z-index: 1;
+    }
+    & &_titre{
+        bottom: 20px;
+        color:$light-color;
+        font-size: 18px;
+        left: 20px;
+        width: 50%;
+        margin: 0;
+        position: absolute;
+        right: 20px;
+        z-index: 2;
+    }
+}
+

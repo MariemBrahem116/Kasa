@@ -1,0 +1,54 @@
+@use "../../Utils/colors.scss" as *;
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:$color-red;
+    padding:40px;
+    font-weight: 500;
+    gap:3rem;
+
+    img{
+        max-width: 100%;
+    }
+    div{
+        display: flex;
+        gap: 57px;
+        justify-content: space-between;
+        padding-left: 0;
+        @media screen and (width <= 580px){
+            gap:0;
+            margin-right: 0;
+            font-size: 0.75em;
+        }
+    }
+    @media screen and (width <= 768px){
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    @media screen and (width <= 412px){
+        padding: 20px;
+    }
+    & a{
+        text-decoration: none;
+        color:$color-red;
+        font-size: 1.5em;
+        min-width: 100px;
+        @media screen and (width <= 768px){
+            font-size: 1.25em;
+        }
+        @media screen and (width <= 580px){
+
+        }
+        &:hover,
+        &.active{
+            text-decoration:underline;
+        }
+
+    }
+}
+
+
+
+

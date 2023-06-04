@@ -1,18 +1,26 @@
-@use "../scss/colors.scss" as *;
+@use "../../Utils/colors.scss" as *;
 
-.appartement-image{border-radius: 25px;
+.appartement-image{
+    border-radius: 25px;
     height: 415px;
     overflow: hidden;
     position: relative;
     width: 100%;
     margin-bottom: 1rem;
-    .slideCounter{
+    @media screen and (width <= 413px){
+        height: 255px;
+        border-radius: 10px;
+    }
+    .slideShow{
         position: absolute;
         bottom: 1rem;
         width: 100%;
         text-align: center;
         color: $light-color;
         font-size: 18px;
+        @media screen and (width <= 413px){
+            display: none;
+        }
     }
     .btn{
         position: absolute;
@@ -24,6 +32,10 @@
         cursor: pointer;
         font-size:3rem ;
         border-width: 0;
+        @media screen and (width <= 413px){
+            width: 2.5rem;
+            font-size: 1.5rem;
+        }
         &.btnPrevious{
             left:0;
         }

@@ -1,0 +1,30 @@
+@use "../../Utils/colors.scss" as *;
+
+.appartement-grid{
+    background: $grey-color;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 60px;
+    justify-content:space-around;
+    margin-top: 43px;
+    padding: 50px;
+    margin-bottom: 3rem;
+    @media screen and (width <= 412px) {
+        justify-content: center;
+        background-color: $light-color;
+        padding: 0;
+
+    }
+
+    a{
+        max-height: 340px;
+        max-width: 340px;
+        min-width: 241px;
+        @media screen and (min-width:810px){
+            flex-basis: 40%;
+        }
+    }
+
+
+}
