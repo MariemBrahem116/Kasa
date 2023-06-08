@@ -1,0 +1,20 @@
+const router = createBrowserRouter([
+  {
+    element: <HeaderFooterLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />
+      },
+      {
+        path: "/flat",
+        element: <AppartementPage />
+      },
+      {
+        path: "/about",
+        element:<About />
+      }
+    ]
+  }
+]);
