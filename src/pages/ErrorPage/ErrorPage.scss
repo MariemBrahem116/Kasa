@@ -3,17 +3,29 @@
 .errorPage{
     text-align: center;
     color:$color-red;
+    height: 800px;
     h1{
-       font-size: 160px;
-       margin-block: 3rem;
+       font-size: 288px;
+       margin-bottom: 66px;
+       @media screen and (width <= 800px) {
+            font-size: 188px;
+       }
+       @media screen and (width <= 450px)  {
+            font-size: 96px;
+            margin-top: 5rem;
+       }
     }
     h2{
-        font-size: 28px;
+        font-size: 36px;
         font-weight: 400;
-        margin-bottom: 8rem;
+        margin-bottom: 182px;
+        @media screen and (width <= 450px)  {
+            font-size: 18px;
+       }
     }
     a{
         color:$color-red;
+        margin-bottom: 159px;
 
     }
 }

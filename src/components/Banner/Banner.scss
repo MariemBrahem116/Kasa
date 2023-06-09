@@ -23,10 +23,8 @@
         right: 0;
         top: 0;
         z-index: -1;
-        @media screen and (width <= 1300px){
-            object-fit: cover;
-        }
-        @media screen and (width <= 412px){
+        object-fit: cover;
+        @media screen and (width <= 612px){
             border-radius: 10px;
         }
     }
@@ -42,7 +40,7 @@
         right: 0;
         top: 0;
         width: 100%;
-        @media screen and (width <= 412px){
+        @media screen and (width <= 612px){
             border-radius: 10px;
         }
     }

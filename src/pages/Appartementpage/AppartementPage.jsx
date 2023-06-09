@@ -8,7 +8,7 @@ import Carroussel from '../../components/Carroussel/Carroussel'
 function AppartementPage() {
   const location = useLocation();
   const [selectedFlat,setSelectedFlat] = useState(null);
-  useEffect(fetchAppartementData)
+  useEffect(fetchAppartementData,[location]);
 
   function fetchAppartementData(){
     fetch("db.json")
@@ -26,7 +26,7 @@ function AppartementPage() {
         <AppartementHeader flat={selectedFlat} />
         <div className='AppartementDescriptionScroll'>
             <Collapse title="Description" content={selectedFlat.description}/>
-            <Collapse title="Equipements" content={selectedFlat.equipements.map((eq,i) => (<p key={`${eq}-${i}`}>{eq}</p>))}/>
+            <Collapse title="Equipements" content={selectedFlat.equipements.map((eq) => (<p key={eq}>{eq}</p>))}/>
         </div>
     </div>
   )

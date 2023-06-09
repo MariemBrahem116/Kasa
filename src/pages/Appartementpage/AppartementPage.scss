@@ -6,9 +6,9 @@
         display: flex;
         gap:2rem;
         justify-content: space-between;
+        margin-bottom: 3rem;
         @media screen and (width <= 768px){
             flex-direction: column;
-            gap:0;
         }
         * > {
             flex-grow: 1;
