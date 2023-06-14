@@ -1,19 +1,14 @@
 import React from 'react'
 import "./Cards.scss"
-import { Link } from 'react-router-dom'
 
-function Cards(props) {
+function Cards({imgUrl,title,id}) {
+
   return (
-      <Link to= "/flat" state={
-        {
-          appartementId:props.id
-        }}
-      >
         <div className='appartement'>
-          <img src={props.imageUrl} alt="imageAppartement"/>
-          <div className='appartement_titre'>{props.title}</div>
+          <img src={imgUrl} alt="imageAppartement" id={id}/>
+          <div className='appartement_titre'>{title}</div>
         </div>
-      </Link>
+
   )
 }
 

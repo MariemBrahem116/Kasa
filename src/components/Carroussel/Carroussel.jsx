@@ -35,7 +35,7 @@ function Carroussel(props) {
     <div className='appartement-image'>
       {
         photos.map((photo,i) => (
-          <img key={`${photo}-${i}`} src= {photo} alt="ImageAppartement" className={getClassName(i)}></img>
+          <img key={`${photo}-${i}`} src= {photo} alt="ImageAppartement" className={getClassName(i)}/>
         ))
       }
       <button  className ='btn btnNext' onClick={moveToNext}>

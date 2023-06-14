@@ -1,12 +1,10 @@
 import React from 'react'
 import "../ErrorPage/ErrorPage.scss"
-import Navbar from '../../layout/Header/Navbar'
 import Main from '../../layout/Main/Main'
 import { Link } from 'react-router-dom'
 function ErrorPage() {
   return (
     <>
-    <Navbar />
     <Main>
         <div className='errorPage'>
             <h1>404</h1>

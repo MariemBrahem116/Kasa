@@ -6,8 +6,8 @@ import "../HomePage/HomePage.scss"
 function HomePage() {
   return (
     <>
-        <Banner />
-        <AppartementList />
+      <Banner />
+      <AppartementList />
     </>
   )
 }
