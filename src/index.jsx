@@ -25,7 +25,7 @@ const HeaderFooterLayout =() =>{
 const router = createBrowserRouter([
   {
     element: <HeaderFooterLayout />,
-    errorElement: <ErrorPage />,
+    errorElement:<><Navbar /> <ErrorPage /></>,
     children: [
       {
         path: "/",
